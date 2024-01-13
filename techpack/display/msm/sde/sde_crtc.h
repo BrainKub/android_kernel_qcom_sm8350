@@ -975,4 +975,10 @@ void sde_crtc_cancel_delayed_work(struct drm_crtc *crtc);
 
 bool sde_crtc_is_fod_enabled(struct drm_crtc_state *state);
 
+/**
+ * sde_crtc_cancel_delayed_work - cancel any pending work items for a given crtc
+ * @crtc: Pointer to DRM crtc object
+ */
+void sde_crtc_cancel_delayed_work(struct drm_crtc *crtc);
+
 #endif /* _SDE_CRTC_H_ */
